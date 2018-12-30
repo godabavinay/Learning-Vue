@@ -1,0 +1,25 @@
+html, body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.product {
+    padding: 10px;
+}
+
+.product-image {
+    padding: 20px;
+    width: 25%;
+    float: left;
+    clear: both;
+}
+
+.product-info {
+    float: left;
+    width: 20%;
+}
+
+.nav-bar {
+    height: 100px;
+    background-color: #6effbf;
+}

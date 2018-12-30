@@ -3,6 +3,7 @@
 <html>
     <head>
         <title>Product App</title>
+        <link href="stylesheet.css" rel="stylesheet">
     </head>
     <body>
 
@@ -11,14 +12,16 @@
         <div id="app">
             <div class="product">
                 <div class="product-image">
-                    <img src="" />
+                    <img src="assets/pink-socks.jpg" height="250px"/>
                 </div>
                 
                 <div class="product-info">
-
+                    <h1>{{ product }}</h1>
+                    <p v-if="inventory > 10">In Stock</p>
+                    <p v-else-if="inventory <= 10 && inventory > 0">Almost sold out</p>
+                    <p v-else>Out of stock</p>
                 </div>
-                <h1>{{ product }}</h1>
-                <p>{{ product_description }}</p>
+            
             </div>
         </div>
         <script src="https://cdn.jsdelivr.net/npm/vue"></script>
